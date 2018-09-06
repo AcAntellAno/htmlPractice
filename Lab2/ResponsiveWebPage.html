@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Web Page</title>
+    <style>
+            * {
+                box-sizing: border-box;
+            }
+            header {
+                background-color: lightgray;
+                padding: 15px;
+                text-align: center;
+            }
+            nav {
+                float: left;
+                width: 20%;
+                text-align: center;
+            }
+            nav ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+            }
+            nav ul li {
+                text-decoration: none;
+                background-color: lightgray;
+                width: 100%;
+                padding: 8px;
+                margin: 10px 0;
+            }
+            article {
+                float: left;
+                width: 60%;
+                padding: 0 20px;
+            }
+            aside {
+                background-color: lightgray;
+                float: left;
+                width: 20%;
+                padding: 8px;
+                margin: 10px 0;
+            }
+            footer {
+                background-color: lightgray;
+                padding: 5px;
+                text-align: center;
+                clear: both;
+            }
+            @media only screen and (max-width: 620px){
+                nav, article, aside {
+                    width: 100%;
+                }
+            }
+        </style>
+</head>
+<body>
+
+
+<div class="container">
+        <header>
+            <h2>Ecommerce Systems Design</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Lecture</a></li>
+                <li><a href="#">Lab</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <article>
+                <h3>HTML #1</h3>
+                <p>Let's see basic html tags</p>
+            </article>
+    <aside>
+        <h3>About</h3>
+        <p>Great Course</p>
+    </aside>
+      
+       
+        <footer>
+            Copyright &copy;, Daehee Kim
+        </footer>
+    </div>
+</body>
+</html>
