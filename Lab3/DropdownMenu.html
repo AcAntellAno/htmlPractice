@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropdown Menu</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: lightgray;
+            font-size: 30px;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            padding: 8px;
+            background-color: lightgray;
+            text-decoration: none;
+            color: black;
+        }
+        li a.current {
+            background-color: green;
+            color: white;
+        }
+        li a:hover:not(.current){
+            background-color: black;
+            color: white;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            width: 160px;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+        <ul>
+            <li><a class="current" href="#">Home</a></li>
+            <li class="dropdown"><a href="#">News</a>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        </body>
+</body>
+</html>
