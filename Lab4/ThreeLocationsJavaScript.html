@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Three Locations JavaScript</title>
+    <script>
+        function greet() {
+            document.getElementById('greeting').innerHTML="Kim";
+        }
+    </script>
+    <script src="external.js"></script>
+</head>
+<body>
+    <button onclick="document.getElementById('greeting').innerHTML=innerHTML='Danny'">Greeting 1</button>
+    <button onclick="greet()">Greeting2</button>
+    <button onclick="greetAgain()">Greeting3</button>
+    <p id="greeting"></p>
+</body>
+</html>

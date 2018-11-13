@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Access Objects</title>
+    <script>
+        function changeID() {
+            document.getElementById("id1").innerHTML = "Danny";
+        }
+        function changeTags() {
+            var tags = document.getElementsByTagName("h2");
+            for(var i = 0; i < tags.length; i++){
+                tags[i].innerHTML = "Kim " + i;
+            }
+        }
+
+        function changeClasses() {
+            var classes = document.getElementsByClassName("class1");
+            for(var i = 0; i < classes.length; i++){
+                classes[i].innerHTML = "Sarah " + i;
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="changeId()">Change ID</button>
+    <button onclick="changeTags()">Change Tags</button>
+    <button onclick="changeClasses()">Change Classes</button>
+
+    <p id=""id1>p (id="id1")</p>
+    <h2>h2</h2>
+    <h2 class="class1">h2 (class="class1")</h2>
+    <p class="class1">p (class="class1")</p>
+</body>
+</html>
