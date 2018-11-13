@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTMLCSSJavaScript</title>
+    <style>
+        p#style {
+            text-transform: uppercase;
+            border: 1px solid green;
+            display: inline;
+            padding: 3px 10px;
+            background: lightgray;
+            border-radius: 10px;
+            color: green;
+        }
+    </style>
+    <script>
+        function changeName() {
+            var name = prompt('Enter a new name: ');
+            document.getElementById("style").innerHTML = "Name: " + name;
+        }
+    </script>
+</head>
+<body>
+    <title>HTML vs CSS vs JavaScript</title>
+    <p>Name: Danny</p>
+    <p id="style">Name: Danny</p><br><br>
+    <button onclick="changeName()">Change Name</button>
+</body>
+</html>
